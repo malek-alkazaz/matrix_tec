@@ -1,0 +1,1723 @@
+{
+	"info": {
+		"_postman_id": "6c406f7e-06de-400e-ba86-cf0be01722cf",
+		"name": "matrix_tec",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "17440826"
+	},
+	"item": [
+		{
+			"name": "Project",
+			"item": [
+				{
+					"name": "get all projects",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/project",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"project"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "get all projects",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/project",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"project"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 06 Jun 2023 09:24:32 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 06 Jun 2023 09:24:32 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.1.4"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "58"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"message\": \"success operation\",\n    \"data\": [\n        {\n            \"id\": 1,\n            \"name\": \"مشروع #1\",\n            \"description\": \"وصف المشروع #1\",\n            \"costs\": [\n                {\n                    \"id\": 1,\n                    \"name\": \"تكلفة #1\",\n                    \"description\": \"وصف التكلفة #1\",\n                    \"amount\": \"819.00\",\n                    \"currency_id\": 1\n                },\n                {\n                    \"id\": 2,\n                    \"name\": \"تكلفة #2\",\n                    \"description\": \"وصف التكلفة #2\",\n                    \"amount\": \"236.00\",\n                    \"currency_id\": 4\n                },\n                {\n                    \"id\": 3,\n                    \"name\": \"تكلفة #3\",\n                    \"description\": \"وصف التكلفة #3\",\n                    \"amount\": \"800.00\",\n                    \"currency_id\": 1\n                },\n                {\n                    \"id\": 4,\n                    \"name\": \"تكلفة #4\",\n                    \"description\": \"وصف التكلفة #4\",\n                    \"amount\": \"577.00\",\n                    \"currency_id\": 1\n                },\n                {\n                    \"id\": 5,\n                    \"name\": \"تكلفة #5\",\n                    \"description\": \"وصف التكلفة #5\",\n                    \"amount\": \"425.00\",\n                    \"currency_id\": 1\n                }\n            ]\n        },\n        {\n            \"id\": 2,\n            \"name\": \"مشروع #2\",\n            \"description\": \"وصف المشروع #2\",\n            \"costs\": [\n                {\n                    \"id\": 6,\n                    \"name\": \"تكلفة #1\",\n                    \"description\": \"وصف التكلفة #1\",\n                    \"amount\": \"372.00\",\n                    \"currency_id\": 2\n                },\n                {\n                    \"id\": 7,\n                    \"name\": \"تكلفة #2\",\n                    \"description\": \"وصف التكلفة #2\",\n                    \"amount\": \"155.00\",\n                    \"currency_id\": 2\n                },\n                {\n                    \"id\": 8,\n                    \"name\": \"تكلفة #3\",\n                    \"description\": \"وصف التكلفة #3\",\n                    \"amount\": \"567.00\",\n                    \"currency_id\": 3\n                },\n                {\n                    \"id\": 9,\n                    \"name\": \"تكلفة #4\",\n                    \"description\": \"وصف التكلفة #4\",\n                    \"amount\": \"587.00\",\n                    \"currency_id\": 3\n                },\n                {\n                    \"id\": 10,\n                    \"name\": \"تكلفة #5\",\n                    \"description\": \"وصف التكلفة #5\",\n                    \"amount\": \"335.00\",\n                    \"currency_id\": 1\n                }\n            ]\n        },\n        {\n            \"id\": 3,\n            \"name\": \"مشروع #3\",\n            \"description\": \"وصف المشروع #3\",\n            \"costs\": [\n                {\n                    \"id\": 11,\n                    \"name\": \"تكلفة #1\",\n                    \"description\": \"وصف التكلفة #1\",\n                    \"amount\": \"527.00\",\n                    \"currency_id\": 1\n                },\n                {\n                    \"id\": 12,\n                    \"name\": \"تكلفة #2\",\n                    \"description\": \"وصف التكلفة #2\",\n                    \"amount\": \"338.00\",\n                    \"currency_id\": 1\n                },\n                {\n                    \"id\": 13,\n                    \"name\": \"تكلفة #3\",\n                    \"description\": \"وصف التكلفة #3\",\n                    \"amount\": \"233.00\",\n                    \"currency_id\": 4\n                },\n                {\n                    \"id\": 14,\n                    \"name\": \"تكلفة #4\",\n                    \"description\": \"وصف التكلفة #4\",\n                    \"amount\": \"167.00\",\n                    \"currency_id\": 2\n                },\n                {\n                    \"id\": 15,\n                    \"name\": \"تكلفة #5\",\n                    \"description\": \"وصف التكلفة #5\",\n                    \"amount\": \"461.00\",\n                    \"currency_id\": 2\n                }\n            ]\n        },\n        {\n            \"id\": 4,\n            \"name\": \"مشروع #4\",\n            \"description\": \"وصف المشروع #4\",\n            \"costs\": [\n                {\n                    \"id\": 16,\n                    \"name\": \"تكلفة #1\",\n                    \"description\": \"وصف التكلفة #1\",\n                    \"amount\": \"386.00\",\n                    \"currency_id\": 1\n                },\n                {\n                    \"id\": 17,\n                    \"name\": \"تكلفة #2\",\n                    \"description\": \"وصف التكلفة #2\",\n                    \"amount\": \"753.00\",\n                    \"currency_id\": 2\n                },\n                {\n                    \"id\": 18,\n                    \"name\": \"تكلفة #3\",\n                    \"description\": \"وصف التكلفة #3\",\n                    \"amount\": \"400.00\",\n                    \"currency_id\": 1\n                },\n                {\n                    \"id\": 19,\n                    \"name\": \"تكلفة #4\",\n                    \"description\": \"وصف التكلفة #4\",\n                    \"amount\": \"489.00\",\n                    \"currency_id\": 3\n                },\n                {\n                    \"id\": 20,\n                    \"name\": \"تكلفة #5\",\n                    \"description\": \"وصف التكلفة #5\",\n                    \"amount\": \"351.00\",\n                    \"currency_id\": 2\n                }\n            ]\n        },\n        {\n            \"id\": 5,\n            \"name\": \"مشروع #5\",\n            \"description\": \"وصف المشروع #5\",\n            \"costs\": [\n                {\n                    \"id\": 26,\n                    \"name\": \"التكلفة رقم 1\",\n                    \"description\": \"وصف التكلفة رقم 1\",\n                    \"amount\": \"550.00\",\n                    \"currency_id\": 3\n                },\n                {\n                    \"id\": 27,\n                    \"name\": \"التكلفة رقم 2\",\n                    \"description\": \"وصف التكلفة رقم 2\",\n                    \"amount\": \"730.00\",\n                    \"currency_id\": 1\n                }\n            ]\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "show project",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/project/3",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"project",
+								"3"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "show project",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/project/3",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"project",
+										"3"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 06 Jun 2023 09:24:29 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 06 Jun 2023 09:24:29 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.1.4"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "59"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"message\": \"success operation\",\n    \"data\": {\n        \"id\": 3,\n        \"name\": \"مشروع #3\",\n        \"description\": \"وصف المشروع #3\",\n        \"costs\": [\n            {\n                \"id\": 11,\n                \"name\": \"تكلفة #1\",\n                \"description\": \"وصف التكلفة #1\",\n                \"amount\": \"527.00\",\n                \"currency_id\": 1\n            },\n            {\n                \"id\": 12,\n                \"name\": \"تكلفة #2\",\n                \"description\": \"وصف التكلفة #2\",\n                \"amount\": \"338.00\",\n                \"currency_id\": 1\n            },\n            {\n                \"id\": 13,\n                \"name\": \"تكلفة #3\",\n                \"description\": \"وصف التكلفة #3\",\n                \"amount\": \"233.00\",\n                \"currency_id\": 4\n            },\n            {\n                \"id\": 14,\n                \"name\": \"تكلفة #4\",\n                \"description\": \"وصف التكلفة #4\",\n                \"amount\": \"167.00\",\n                \"currency_id\": 2\n            },\n            {\n                \"id\": 15,\n                \"name\": \"تكلفة #5\",\n                \"description\": \"وصف التكلفة #5\",\n                \"amount\": \"461.00\",\n                \"currency_id\": 2\n            }\n        ]\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "add Project",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "مشروع #7",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "وصف المشروع #7",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/project",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"project"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "add Project",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "name",
+											"value": "مشروع #7",
+											"type": "text"
+										},
+										{
+											"key": "description",
+											"value": "وصف المشروع #7",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{url}}/project",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"project"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 05 Jun 2023 10:56:57 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 05 Jun 2023 10:56:57 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.1.4"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "59"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"message\": \"success operation\",\n    \"data\": {\n        \"name\": \"مشروع #7\",\n        \"description\": \"وصف المشروع #7\",\n        \"updated_at\": \"2023-06-05T10:56:57.000000Z\",\n        \"created_at\": \"2023-06-05T10:56:57.000000Z\",\n        \"id\": 7\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "update project",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/project/4?name=&description=وصف المشروع %23411",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"project",
+								"4"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": ""
+								},
+								{
+									"key": "description",
+									"value": "وصف المشروع #411"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "update project",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/project/4?name=&description=وصف المشروع %23411",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"project",
+										"4"
+									],
+									"query": [
+										{
+											"key": "name",
+											"value": ""
+										},
+										{
+											"key": "description",
+											"value": "وصف المشروع %23411"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 05 Jun 2023 11:39:02 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 05 Jun 2023 11:39:02 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.1.4"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "59"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"message\": \"success operation\",\n    \"data\": {\n        \"id\": 4,\n        \"name\": \"مشروع #4\",\n        \"description\": \"وصف المشروع #411\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "delete project",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/project/8",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"project",
+								"8"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "delete project",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/project/8",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"project",
+										"8"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 05 Jun 2023 11:27:20 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 05 Jun 2023 11:27:20 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.1.4"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "58"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"message\": \"resource deleted successfully\",\n    \"data\": \"8\"\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Currency",
+			"item": [
+				{
+					"name": "get all currency",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/currency",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"currency"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "get all currency",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/currency",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"currency"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 06 Jun 2023 09:37:59 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 06 Jun 2023 09:37:59 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.1.4"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "59"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"message\": \"success operation\",\n    \"data\": [\n        {\n            \"id\": 1,\n            \"name\": \"الدولار الأمريكي\",\n            \"code\": \"USD\",\n            \"rate\": \"1.00000\"\n        },\n        {\n            \"id\": 2,\n            \"name\": \"اليورو\",\n            \"code\": \"EUR\",\n            \"rate\": \"0.93000\"\n        },\n        {\n            \"id\": 3,\n            \"name\": \"الدرهم الأماراتي\",\n            \"code\": \"AED\",\n            \"rate\": \"3.67000\"\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "show currency",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/currency/1",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"currency",
+								"1"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "show currency",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/currency/1",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"currency",
+										"1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 06 Jun 2023 09:38:14 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 06 Jun 2023 09:38:14 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.1.4"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "58"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"message\": \"success operation\",\n    \"data\": {\n        \"id\": 1,\n        \"name\": \"الدولار الأمريكي\",\n        \"code\": \"USD\",\n        \"rate\": \"1.00000\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "add currency",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "الروبل",
+									"type": "text"
+								},
+								{
+									"key": "code",
+									"value": "RUB",
+									"type": "text"
+								},
+								{
+									"key": "rate",
+									"value": "81.2",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/currency",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"currency"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "add currency",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "name",
+											"value": "الروبل",
+											"type": "text"
+										},
+										{
+											"key": "code",
+											"value": "RUB",
+											"type": "text"
+										},
+										{
+											"key": "rate",
+											"value": "81.2",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{url}}/currency",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"currency"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 06 Jun 2023 09:50:37 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 06 Jun 2023 09:50:37 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.1.4"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "59"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"message\": \"success operation\",\n    \"data\": {\n        \"name\": \"الروبل\",\n        \"code\": \"RUB\",\n        \"rate\": \"81.2\",\n        \"updated_at\": \"2023-06-06T09:50:37.000000Z\",\n        \"created_at\": \"2023-06-06T09:50:37.000000Z\",\n        \"id\": 5\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "update currency",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "يورو",
+									"type": "text"
+								},
+								{
+									"key": "code",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "rate",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/currency/2",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"currency",
+								"2"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "update currency",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "name",
+											"value": "يورو",
+											"type": "text"
+										},
+										{
+											"key": "code",
+											"value": "",
+											"type": "text"
+										},
+										{
+											"key": "rate",
+											"value": "",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{url}}/currency/2",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"currency",
+										"2"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 05 Jun 2023 14:50:38 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 05 Jun 2023 14:50:38 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.1.4"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "57"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"message\": \"success operation\",\n    \"data\": {\n        \"id\": 2,\n        \"name\": \"يورو\",\n        \"code\": \"EUR\",\n        \"rate\": \"0.93000\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "delete currency",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/currency/4",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"currency",
+								"4"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "delete currency",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/currency/4",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"currency",
+										"4"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 05 Jun 2023 14:22:12 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 05 Jun 2023 14:22:12 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.1.4"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "59"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"message\": \"resource deleted successfully\",\n    \"data\": 4\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Cost",
+			"item": [
+				{
+					"name": "show cost",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/cost/1",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"cost",
+								"1"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "show cost",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/cost/1",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"cost",
+										"1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 06 Jun 2023 08:10:47 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 06 Jun 2023 08:10:47 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.1.4"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "58"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"message\": \"success operation\",\n    \"data\": {\n        \"id\": 1,\n        \"name\": \"تكلفة #1\",\n        \"description\": \"وصف التكلفة #1\",\n        \"amount\": \"819.00\",\n        \"currency_id\": 1,\n        \"project_id\": 1\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "add cost",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"project_id\":5,\r\n    \"costs\":[\r\n        {\r\n            \"name\": \"التكلفة رقم 1\",\r\n            \"description\":\"وصف التكلفة رقم 1\",\r\n            \"amount\":550,\r\n            \"currency_id\": 3\r\n        },\r\n        {\r\n            \"name\": \"التكلفة رقم 2\",\r\n            \"description\":\"وصف التكلفة رقم 2\",\r\n            \"amount\":730,\r\n            \"currency_id\": 1\r\n        },\r\n        {\r\n            \"name\": \"التكلفة رقم 3\",\r\n            \"description\":\"وصف التكلفة رقم 3\",\r\n            \"amount\":420,\r\n            \"currency_id\": 2\r\n        }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/cost",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"cost"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "add cost",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"project_id\":5,\r\n    \"costs\":[\r\n        {\r\n            \"name\": \"التكلفة رقم 1\",\r\n            \"description\":\"وصف التكلفة رقم 1\",\r\n            \"amount\":550,\r\n            \"currency_id\": 3\r\n        },\r\n        {\r\n            \"name\": \"التكلفة رقم 2\",\r\n            \"description\":\"وصف التكلفة رقم 2\",\r\n            \"amount\":730,\r\n            \"currency_id\": 1\r\n        },\r\n        {\r\n            \"name\": \"التكلفة رقم 3\",\r\n            \"description\":\"وصف التكلفة رقم 3\",\r\n            \"amount\":420,\r\n            \"currency_id\": 2\r\n        }\r\n    ]\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/cost",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"cost"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 06 Jun 2023 08:10:18 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 06 Jun 2023 08:10:18 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.1.4"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "59"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"message\": \"resource created successfully\",\n    \"data\": [\n        {\n            \"id\": 26,\n            \"project_id\": 5,\n            \"name\": \"التكلفة رقم 1\",\n            \"description\": \"وصف التكلفة رقم 1\",\n            \"amount\": \"550.00\",\n            \"currency_id\": 3,\n            \"created_at\": \"2023-06-06T08:10:18.000000Z\",\n            \"updated_at\": \"2023-06-06T08:10:18.000000Z\"\n        },\n        {\n            \"id\": 27,\n            \"project_id\": 5,\n            \"name\": \"التكلفة رقم 2\",\n            \"description\": \"وصف التكلفة رقم 2\",\n            \"amount\": \"730.00\",\n            \"currency_id\": 1,\n            \"created_at\": \"2023-06-06T08:10:18.000000Z\",\n            \"updated_at\": \"2023-06-06T08:10:18.000000Z\"\n        },\n        {\n            \"id\": 28,\n            \"project_id\": 5,\n            \"name\": \"التكلفة رقم 3\",\n            \"description\": \"وصف التكلفة رقم 3\",\n            \"amount\": \"420.00\",\n            \"currency_id\": 2,\n            \"created_at\": \"2023-06-06T08:10:18.000000Z\",\n            \"updated_at\": \"2023-06-06T08:10:18.000000Z\"\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "update cost",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "التكلفة رقم 1",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "وصف التكلفة رقم 1",
+									"type": "text"
+								},
+								{
+									"key": "amount",
+									"value": "550",
+									"type": "text"
+								},
+								{
+									"key": "currency_id",
+									"value": "2",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/cost/1",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"cost",
+								"1"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "update cost",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "name",
+											"value": "التكلفة رقم 1",
+											"type": "text"
+										},
+										{
+											"key": "description",
+											"value": "وصف التكلفة رقم 1",
+											"type": "text"
+										},
+										{
+											"key": "amount",
+											"value": "550",
+											"type": "text"
+										},
+										{
+											"key": "currency_id",
+											"value": "2",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{url}}/cost/1",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"cost",
+										"1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 06 Jun 2023 09:35:34 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 06 Jun 2023 09:35:34 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.1.4"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "59"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"message\": \"success operation\",\n    \"data\": {\n        \"id\": 1,\n        \"name\": \"التكلفة رقم 1\",\n        \"description\": \"وصف التكلفة رقم 1\",\n        \"amount\": \"550\",\n        \"currency_id\": \"2\",\n        \"project_id\": 1\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "delete cost",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/cost/28",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"cost",
+								"28"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "New Request",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/cost/28",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"cost",
+										"28"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 06 Jun 2023 08:12:19 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 06 Jun 2023 08:12:19 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.1.4"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "59"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"message\": \"resource deleted successfully\",\n    \"data\": \"28\"\n}"
+						}
+					]
+				},
+				{
+					"name": "convert currency",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "amount",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "fromCurrency",
+									"value": "EUR",
+									"type": "text"
+								},
+								{
+									"key": "toCurrency",
+									"value": "USD",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/cost/convert",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"cost",
+								"convert"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "convert currency",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "amount",
+											"value": "1",
+											"type": "text"
+										},
+										{
+											"key": "fromCurrency",
+											"value": "EUR",
+											"type": "text"
+										},
+										{
+											"key": "toCurrency",
+											"value": "USD",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{url}}/cost/convert",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"cost",
+										"convert"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 06 Jun 2023 07:37:52 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 06 Jun 2023 07:37:52 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.1.4"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "59"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"message\": \"success operation\",\n    \"data\": 1.08\n}"
+						}
+					]
+				},
+				{
+					"name": "calc Project Cost",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/cost/calc/1",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"cost",
+								"calc",
+								"1"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "calc Project Cost",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/cost/calc/1",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"cost",
+										"calc",
+										"1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 06 Jun 2023 08:09:19 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 06 Jun 2023 08:09:19 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.1.4"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "58"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"message\": \"success operation\",\n    \"data\": 2684\n}"
+						}
+					]
+				},
+				{
+					"name": "calc Project Cost With Currency",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "project_id",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "currency",
+									"value": "EUR",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/cost/calc-w-currency",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"cost",
+								"calc-w-currency"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "calc Project Cost With Currency",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "project_id",
+											"value": "1",
+											"type": "text"
+										},
+										{
+											"key": "currency",
+											"value": "EUR",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{url}}/cost/calc-w-currency",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"cost",
+										"calc-w-currency"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 06 Jun 2023 08:04:53 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 06 Jun 2023 08:04:53 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.1.4"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "59"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"message\": \"success operation\",\n    \"data\": 2497\n}"
+						}
+					]
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "url",
+			"value": "http://localhost:8000/api",
+			"type": "string"
+		}
+	]
+}
