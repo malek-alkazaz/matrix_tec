@@ -4,7 +4,7 @@ Assessment for Senior Laravel Developer
 
 <br>
 
-This assessment is designed to test an examineeâ€™s knowledge of PHP Design principles and its implementations on Laravel framework. It is divided into 3 levels, with each feature having to be accomplished consecutively.
+This assessment is designed to test an examinee’s knowledge of PHP Design principles and its implementations on Laravel framework. It is divided into 3 levels, with each feature having to be accomplished consecutively.
 
 **Assessment Point System**: The assessment total is 125 points with additional 32 bonus points.
 Passing grade is 100. See breakdown below for more detail.
@@ -17,7 +17,7 @@ Passing grade is 100. See breakdown below for more detail.
 |   TOTAL |    125 |    32 |   157 |
 
 **Asessment Duration**: Examinee is given 3 days to complete the assessment. On a separate spreadsheet, please log the time spent per functionality (start time and end time).
-For any questions regarding the exam please send inquiry to <a href="mailto:info@sourcecode-ai.com">info@sourcecode-ai.com</a> or HR.
+For any questions regarding the exam please send inquiry to <a href="mailto: info@matrix-erp.sy"> info@matrix-erp.sy</a> or HR.
 
 **Output**: Examinee is expected to send an email with attachment to their output files (preferably a zip file). Alternatively, examinee can attach a link to their GitHub Repository, Google Drive, Dropbox, or any other storage service to download the output if the file is too large to be attached on email, or for other reason.
 
@@ -30,7 +30,7 @@ For any questions regarding the exam please send inquiry to <a href="mailto:info
 
 ##### Goals
 
-- [ ] Implement Laravelâ€™s default login feature
+- [ ] Implement Laravel’s default login feature
 - [ ] Develop User CRUD functionalities
 
 <br>
@@ -80,14 +80,14 @@ mysql> show columns from users;
 
 <br>
 
-##### âœŽ Notes
+##### ✎ Notes
 - All users routes must implement the `auth` middleware.
 - The value for `prefixname` should only be one in `[Mr, Mrs, Ms]`.
 - Use `enctype=multipart/form-data` attribute on the `forms` to enable uploading of user photo.
 
 <br>
 
-##### â˜… Bonus
+##### ★ Bonus
 
 - **+5 points** - Write and register a route macro for soft deletes, which can be used as:
 	```php
@@ -160,10 +160,9 @@ mysql> show columns from users;
 <hr>
 <br>
 
-<a name="Level-2"></a>
 ### Level 2
 
-##### Goals
+#### Goals
 
 - [ ] Implement a Service Pattern for User CRUD
 - [ ] Write Unit testing for the service class
@@ -585,7 +584,7 @@ mysql> show columns from users;
 
 <br>
 
-##### âœŽ Notes
+##### ✎ Notes
 
 - You may add more test cases to cover more methods if desired.
 - If a method name is not to your liking, you may change it thus.
@@ -611,7 +610,7 @@ mysql> show columns from users;
 
 <br>
 
-##### â˜… Bonus
+##### ★ Bonus
 
 - **+5 points** - Write a **Feature test** covering the `UserController` functionalities
 - **+5 points** - Write a **Unit test** covering the `<timestamp>_create_users_table` migration columns.
@@ -705,13 +704,13 @@ mysql> show columns from users;
 
 <br>
 
-##### âœŽ Notes
+##### ✎ Notes
 
 - The column `details.user_id` must be a foreign key that references `users.id` and cascades on `DELETE` and `UPDATE`
 
 <br>
 
-##### â˜… Bonus
+##### ★ Bonus
 
 - **+5 points** - Write a **Unit test** covering the event listener's functionalities
 - **+5 points** - Write a **Feature test** covering the event and event listener's functionalities
